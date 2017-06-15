@@ -6,5 +6,8 @@ module.exports = {
     client: "postgresql",
     connection: "postgres://localhost/weedAPI"
   },
-
+  production: {
+    client: "pg",
+    connection: process.env.DATABASE_URL
+  }
 };
